@@ -63,7 +63,7 @@ export const projects = [
       "MySQL",
       "Tailwind CSS",
       "Shadcn UI",
-      "Custom Payment",
+      "Mock Payment",
       "Upstash Redis",
       "Cloudinary",
       "Aiven",

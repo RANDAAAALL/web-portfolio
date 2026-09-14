@@ -99,7 +99,7 @@ body::before {
 .portfolio-nav a:hover { color: #d4d4d4; }
 .portfolio-nav a[aria-current="page"] { color: #eee; font-weight: 600; }
 .item-title { font-size: 14px; line-height: 21px; font-weight: 600; color: #e5e5e5; }
-.item-description { font-size: 13px; line-height: 22px; color: #a0a0a0; margin-top: 10px; overflow-wrap: anywhere; }
+.item-description { font-size: 13px; line-height: 22px; text-align: justify;color: #a0a0a0; margin-top: 10px; overflow-wrap: anywhere; }
 .item-meta { font-size: 12px; line-height: 19px; color: #929292; margin-top: 5px; }
 .group-label { color: #929292; font-size: 12px; font-weight: 500; margin-bottom: 20px; }
 .experience-row { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 24px; padding-block: 5px 24px; }
