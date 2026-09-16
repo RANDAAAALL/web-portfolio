@@ -20,7 +20,7 @@ export const projects = [
       "Supabase",
       "PWA Serwist Service Worker",
     ],
-    liveUrl: "https://mangoleaf-ai.vercel.app/",
+    liveUrl: "https://mangoleafai.vercel.app/",
     githubUrl: "",
     private: true,
   },
