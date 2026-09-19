@@ -3,7 +3,7 @@ import {
   Palette,
   Braces,
   FileCode,
-  Smartphone,
+  // Smartphone,
   Zap,
   Server,
   Database,
@@ -12,7 +12,8 @@ import {
   Coffee,
   GitBranch,
   Wind,
-  Code
+  Globe,
+  // Code,
 } from "lucide-react"
 
 
@@ -25,8 +26,8 @@ export const techStack = {
       { name: "React", description: "Component-based UI library", icon: Code2 },
       { name: "Next.js", description: "Full-stack React framework", icon: Zap },
       { name: "TanStack Query", description: "Powerful data fetching and state management library for React", icon: RefreshCcw},
-      { name: "React Native", description: "Mobile app framework", icon: Smartphone },
-      { name: "Expo", description: "React Native toolchain for rapid development", icon: Zap },
+      // { name: "React Native", description: "Mobile app framework", icon: Smartphone },
+      // { name: "Expo", description: "React Native toolchain for rapid development", icon: Zap },
       { name: "Tailwind CSS", description: "Utility-first CSS framework",  icon: Wind },
     ],
     Backend: [
@@ -39,13 +40,18 @@ export const techStack = {
     ],
     "Database & Services": [
       { name: "MySQL", description: "Relational database", icon: Database },
+      { name: "PostgreSQL", description: "Object-relational database", icon: Database },
       { name: "Firebase", description: "Backend-as-a-Service platform", icon: Flame },
+      { name: "Supabase", description: "Backend-as-a-Service platform", icon: Zap },
+      { name: "Vercel", description: "Cloud platform for static sites and serverless functions", icon: Globe },
+      { name: "Render", description: "Cloud platform for deploying and hosting web applications", icon: Globe },
     ],
     "Tools & Languages": [
       { name: "Git", description: "Version control system", icon: GitBranch },
+      { name: "Github", description: "Version control platform", icon: GitBranch },
       { name: "Java", description: "Object-oriented programming language", icon: Coffee },
-      { name: "C++", description: "General-purpose programming language", icon: Code },
-      { name: "Android Studio", description: "Integrated development environment for Android app development", icon: Smartphone },
+      // { name: "C++", description: "General-purpose programming language", icon: Code },
+      // { name: "Android Studio", description: "Integrated development environment for Android app development", icon: Smartphone },
       { name: "VS Code", description: "Lightweight and versatile source code editor with extensive extensions", icon: FileCode }    
     ],
   }
