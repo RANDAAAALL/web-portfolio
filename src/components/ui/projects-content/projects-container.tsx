@@ -5,7 +5,7 @@ import { projects } from "@/lib/values/project";
 function ProjectEntry({ project }: { project: (typeof projects)[number] }) {
   const images = Array.isArray(project.image) ? project.image : [project.image];
   return (
-    <article className="project-entry" data-project-id={project.id}>
+    <article className="project-entry spotlight-entry" data-project-id={project.id}>
       <div className="project-summary">
         <h3 className="item-title">{project.title}</h3>
         <p className="item-description">{project.description}</p>

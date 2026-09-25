@@ -4,7 +4,7 @@ export default function TechStackContainer() {
   return (
     <section aria-labelledby="page-title">
       {Object.entries(techStack).map(([category, technologies]) => (
-        <section key={category} className="stack-group" aria-label={category}>
+        <section key={category} className="stack-group spotlight-entry" aria-label={category}>
           <h3 className="group-label">{category.toLowerCase()}</h3>
           <div className="stack-grid">
             {technologies.map(({ name, description, icon: Icon }) => (

@@ -128,8 +128,26 @@ body::before {
 .journal-entry .item-title { display: flex; align-items: baseline; gap: 8px; }
 .journal-entry .item-title svg { flex-shrink: 0; color: #929292; }
 .journal-preview { position: relative; aspect-ratio: 3/2; overflow: hidden; border-radius: 7px; border: 1px solid #292929; }
-.journal-preview img { transition: transform 250ms ease; }
-.journal-entry:hover img { transform: scale(1.025); }
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .portfolio-shell:has(.spotlight-entry) :is(.portfolio-header, .portfolio-footer, .scroll-to-top, .spotlight-entry, .closing-note) {
+    transition: opacity 180ms ease, filter 180ms ease, color 150ms ease, border-color 150ms ease, background-color 150ms ease;
+  }
+  .portfolio-shell:has(.spotlight-entry:hover):not(:has(:focus-visible)) :is(.portfolio-header, .portfolio-footer, .scroll-to-top, .spotlight-entry:not(:hover), .closing-note) {
+    opacity: 0.35;
+    filter: blur(1px);
+  }
+  .journal-entry { grid-template-columns: fit-content(50%) minmax(0, 1fr); }
+  .journal-entry > div:first-child { overflow-wrap: anywhere; }
+  .journal-preview {
+    justify-self: end;
+    width: 280px;
+    max-width: 100%;
+    height: calc(280px * 2 / 3);
+    aspect-ratio: auto;
+    transition: width 320ms cubic-bezier(0.2, 0.65, 0.3, 1);
+  }
+  .portfolio-shell:not(:has(:focus-visible)) .journal-entry:hover .journal-preview { width: 100%; }
+}
 .project-list > .project-entry:last-child, .journal-list > .journal-entry:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
 .gallery-trigger { text-align: left; width: 100%; min-width: 0; }
