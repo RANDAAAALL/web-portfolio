@@ -6,6 +6,7 @@ import { Footer } from "@/components/ui/footer/all-rights-reserved";
 import { PageIntro } from "@/components/ui/heading/page-intro";
 import { pageIntros } from "@/lib/values/page-intros";
 import { ScrollToTopButton } from "@/components/ui/scroll-to-top/scroll-to-top-button";
+import { ScrollSpotlight } from "@/components/ui/layout/scroll-spotlight";
 
 export function PortfolioShell({ children }: { children: ReactNode }) {
   return (
@@ -26,6 +27,7 @@ export function PortfolioShell({ children }: { children: ReactNode }) {
       <main id="main-content" tabIndex={-1}>{children}</main>
       <Footer />
       <ScrollToTopButton />
+      <ScrollSpotlight />
     </div>
   );
 }
