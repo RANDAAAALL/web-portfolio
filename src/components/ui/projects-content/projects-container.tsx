@@ -8,6 +8,7 @@ function ProjectEntry({ project }: { project: (typeof projects)[number] }) {
     <article className="project-entry spotlight-entry" data-project-id={project.id}>
       <div className="project-summary">
         <h3 className="item-title">{project.title}</h3>
+        <span className="time-created">{project.timeCreated}</span> 
         <p className="item-description">{project.description}</p>
         <ul className="technology-list" aria-label="Technologies">
           {project.technologies.map(tech => <li key={tech}>{tech}</li>)}
