@@ -2,6 +2,63 @@ import { JournalPostsByCategory } from "../interface/journal-posts-by-category-p
 
 // data set
 export const journalPosts: JournalPostsByCategory = {
+  AWS_community_day_2026: [
+    {
+      id: 1,
+      src: "/aws_community_day/aws_community_day_1.jpg",
+      alt: "aws_community_day_1",
+    },
+    {
+      id: 2,
+      src: "/aws_community_day/aws_community_day_2.jpg",
+      alt: "aws_community_day_2",
+    },
+    {
+      id: 3,
+      src: "/aws_community_day/aws_community_day_3.jpg",
+      alt: "aws_community_day_3",
+    },
+    {
+      id: 4,
+      src: "/aws_community_day/aws_community_day_4.jpg",
+      alt: "aws_community_day_4",
+    },
+    {
+      id: 5,
+      src: "/aws_community_day/aws_community_day_5.jpg",
+      alt: "aws_community_day_5",
+    },
+    {
+      id: 6,
+      src: "/aws_community_day/aws_community_day_6.jpg",
+      alt: "aws_community_day_6",
+    },
+    {
+      id: 7,
+      src: "/aws_community_day/aws_community_day_7.jpg",
+      alt: "aws_community_day_7",
+    },
+    {
+      id: 8,
+      src: "/aws_community_day/aws_community_day_8.jpg",
+      alt: "aws_community_day_8",
+    },
+    {
+      id: 9,
+      src: "/aws_community_day/aws_community_day_9.jpg",
+      alt: "aws_community_day_9",
+    },
+    {
+      id: 10,
+      src: "/aws_community_day/aws_community_day_10.jpg",
+      alt: "aws_community_day_10",
+    },
+    {
+      id: 11,
+      src: "/aws_community_day/aws_community_day_11.jpg",
+      alt: "aws_community_day_11",
+    },
+  ],
   build_with_ai_2026: [
     {
       id: 1,

@@ -1,7 +1,7 @@
 
 export const experiences = [
   {
-    period: "2023 — PRESENT",
+    period: "2023 — Present",
     title: "Freelance Web Developer",
     company: "Self-Employed / Commission-Based Projects",
     description:
