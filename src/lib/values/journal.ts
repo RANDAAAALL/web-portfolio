@@ -58,6 +58,11 @@ export const journalPosts: JournalPostsByCategory = {
       src: "/aws_community_day/aws_community_day_11.jpg",
       alt: "aws_community_day_11",
     },
+    {
+      id: 12,
+      src: "/aws_community_day/aws_community_day_12.jpg",
+      alt: "aws_community_day_12",
+    },
   ],
   build_with_ai_2026: [
     {
