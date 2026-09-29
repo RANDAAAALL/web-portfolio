@@ -588,6 +588,9 @@ body::before {
 .gallery-controls button:hover {
   background: #262626;
 }
+.gallery-controls[data-keyboard-navigation="true"] button:hover:not(:focus-visible) {
+  background: transparent;
+}
 .gallery-caption {
   text-align: center;
   color: #aaa;
@@ -686,6 +689,7 @@ body::before {
     var(--content-reveal-delay) + var(--row-step, 0) * 110ms
   );
 }
+/* A focused row stays visible without resetting its entrance animation. */
 .route-enter
   :is(
     .experience-row,
@@ -695,6 +699,11 @@ body::before {
     .stack-group,
     .closing-note
   ):focus-within {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* The modal returns focus here; later clicks must not replay the fade. */
+.route-enter .gallery-trigger[data-reveal-complete] {
   animation: none;
 }
 .route-enter
