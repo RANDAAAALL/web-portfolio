@@ -4,7 +4,7 @@ import { formatCategoryName } from "@/lib/helper/format-category-name";
 export const pageIntros: Record<string, { title: string; description: string }> = {
   "/": {
     title: "Experience",
-    description: "My experience in web development, focused on crafting user-friendly and engaging digital experiences.",
+    description: "My experience in web development, as someone who loves building modern web applications, is focused on crafting user-friendly and engaging digital experiences",
   },
   "/projects": {
     title: "Projects",
