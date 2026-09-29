@@ -26,7 +26,8 @@
   --ring: #a3a3a3;
   --radius: 0.5rem;
   /* Total time for description words to reveal. */
-  --page-reveal-duration: 1200ms;
+  --page-reveal-duration: 1250ms;
+  --description-blur: 2px;
   --content-reveal-delay: 600ms;
   --page-reveal-easing: cubic-bezier(0.2, 0.65, 0.3, 1);
   --intro-stagger-duration: calc(var(--page-reveal-duration) * 0.4);
@@ -260,13 +261,11 @@ body::before {
 @keyframes intro-reveal {
   from {
     opacity: 0;
-    filter: blur(3px);
-    transform: translateY(2px);
+    filter: blur(var(--description-blur));
   }
   to {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
   }
 }
 .text-link {
