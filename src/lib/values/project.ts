@@ -1,35 +1,35 @@
 export const projects = [
+  // {
+  //   id: 1,
+  //   title: "MangoLeaf AI",
+  //   description:
+  //     "MangoLeaf AI is a capstone project and offline-first progressive web application designed to support future Filipino Dabawenyo mango farmers in identifying possible diseases in mango leaves and fruit. It uses TensorFlow.js for browser-based classification, IndexedDB for local scan storage, and Supabase to sync records when connectivity is available.",
+  //   image: "/mangoleaf-ai.png",
+  //   technologies: [
+  //     "Next.js",
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Bun",
+  //     "Python",
+  //     "Jupyter Notebook",
+  //     "Tensorflow.js",
+  //     "MobileNetV3-Large",
+  //     "Dexie.js",
+  //     "IndexedDB",
+  //     "Supabase",
+  //     "PWA Serwist Service Worker",
+  //   ],
+  //   timeCreated: "July 18, 2026",
+  //   liveUrl: "https://mangoleafai.vercel.app/",
+  //   githubUrl: "",
+  //   private: true,
+  // },
   {
     id: 1,
-    title: "MangoLeaf AI",
-    description:
-      "MangoLeaf AI is a capstone project and offline-first progressive web application designed to support future Filipino Dabawenyo mango farmers in identifying possible diseases in mango leaves and fruit. It uses TensorFlow.js for browser-based classification, IndexedDB for local scan storage, and Supabase to sync records when connectivity is available.",
-    image: "/mangoleaf-ai.png",
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Bun",
-      "Python",
-      "Jupyter Notebook",
-      "Tensorflow.js",
-      "MobileNetV3-Large",
-      "Dexie.js",
-      "IndexedDB",
-      "Supabase",
-      "PWA Serwist Service Worker",
-    ],
-    timeCreated: "July 18, 2026",
-    liveUrl: "https://mangoleafai.vercel.app/",
-    githubUrl: "",
-    private: true,
-  },
-  {
-    id: 2,
     title: "Back Benchers",
     description:
-      "A full-stack community platform for students, developers, and gamers who resonate with the back-bench culture. It features project showcases and real-time Discord presence tracking via WebSocket integration with the Lanyard API, alongside seamless data synchronization with the GitHub and Discord REST APIs.",
+      "A full-stack community platform for students, developers, and gamers who resonate with the back-bench culture. It features real-time Discord presence tracking via WebSocket integration with the Lanyard API, alongside seamless data synchronization with the GitHub and Discord REST APIs.",
     image: "/back-benchers.png",
     technologies: [
       "Next.js",
@@ -50,7 +50,7 @@ export const projects = [
     private: true,
   },
   {
-    id: 3,
+    id: 2,
     title: "Abante Clothing",
     description:
       "A full-stack e-commerce web application built with Next.js, designed as the final project for IM-101. The platform includes basic SEO best practices, user authentication, custom payment, customer and an admin dashboard.",
@@ -77,7 +77,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "Mobile Quiz App",
     description:
       "A full-stack programming quiz app built with React Native Expo and powered by Firebase, designed as the final project for ADV-102. The application allow users to upload profile pictures, track scores, view leaderboard rankings, and review quiz history in real time.",
@@ -97,7 +97,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 5,
+    id: 4,
     title: "Personal Portfolio",
     description:
       "A personal portfolio website that showcases my projects, skills, and experience as a web developer.",
@@ -116,7 +116,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 6,
+    id: 5,
     title: "Speedtyping test",
     description:
       "A speed typing test built with native web technologies. The app challenges users with a static word list, measuring typing speed and accuracy in real time without the use of external frameworks.",
@@ -128,7 +128,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 7,
+    id: 6,
     title: "BackBenchers bot",
     description:
       "A 24/7 AI-powered Discord assistant using TypeScript and Bun, implementing a multi-model failover system with Gemini AI and OpenRouter to ensure 100% uptime and bypass API rate limits.",
@@ -149,7 +149,7 @@ export const projects = [
     private: true,
   },
   {
-    id: 8,
+    id: 7,
     title: "Digital Clock",
     description:
       "A real-time digital clock built with native web technologies, designed to display the current time in the Philippines accurately and continuously without relying on external libraries.",
@@ -161,7 +161,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 9,
+    id: 8,
     title: "Medical Appointment System",
     description:
       "A medical appointment system GUI that allows adding, updating, and deleting patient records, including details such as name, age, gender, location, phone number, and appointment time.",
@@ -172,7 +172,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 10,
+    id: 9,
     title: "Car Rental System",
     description:
       "A car rental system GUI with user registration and login functionality, enabling the management of car and customer information. The system allows adding, updating, and deleting records while also checking car rental availability.",
@@ -183,7 +183,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 11,
+    id: 10,
     title: "CLI Quiz App",
     description:
       "A simple static command-line quiz game developed as a final project, featuring predefined questions and answers to test basic knowledge in an interactive way.",
@@ -194,7 +194,7 @@ export const projects = [
     private: false,
   },
   {
-    id: 12,
+    id: 11,
     title: "Restaurant Management System",
     description:
       "A restaurant management system GUI built with Java Swing featuring both admin and customer panels. The system allows uploading food images, adding order items to a cart, managing orders, and generating receipts through an interactive graphical user interface.",
