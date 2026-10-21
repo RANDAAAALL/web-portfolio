@@ -16,8 +16,12 @@ concurrency:
 jobs:
   verify:
     name: lint / typecheck / build / audit
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
+    # Pinned deliberately. `ubuntu-latest` migrates to Ubuntu 26.04 in November
+    # 2026; pinning keeps the runner image deterministic so a native module
+    # (sharp, @next/swc) can never break the build from an OS change.
+    # Bump this to `ubuntu-26.04` when 24.04 is announced as deprecated.
 
     env:
       # PLACEHOLDERS ONLY -- never real secrets.
