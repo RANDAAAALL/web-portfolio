@@ -85,8 +85,11 @@ jobs:
       - name: Build
         run: bun run build
 
-      # Hard gate.
-      #
+      # TEMPORARY CANARY - removed in the follow-up commit
+      - name: "[canary] intentionally fail to test the deployment gate"
+        run: exit 1
+
+      # Hard gate.      #
       # GHSA-vfj7-8cjw-p6xm (braces, stack exhaustion via deeply nested glob
       # patterns) has NO upstream patch -- 3.0.3 is the latest published
       # release -- and every glob pattern in this project is a static
