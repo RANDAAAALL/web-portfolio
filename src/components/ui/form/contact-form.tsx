@@ -92,12 +92,13 @@ export function ContactForm({ children }: ContactFormProps) {
                 id="firstName"
                 name="firstName"
                 placeholder="John"
+                maxLength={60}
                 required
               />
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName">Last name</Label>
-              <Input id="lastName" name="lastName" placeholder="Doe" required />
+              <Input id="lastName" name="lastName" placeholder="Doe" maxLength={60} required />
             </div>
           </div>
 
@@ -108,6 +109,7 @@ export function ContactForm({ children }: ContactFormProps) {
               name="email"
               type="email"
               placeholder="john@example.com"
+              maxLength={254}
               required
             />
           </div>
@@ -118,6 +120,7 @@ export function ContactForm({ children }: ContactFormProps) {
               id="subject"
               name="subject"
               placeholder="Let's work together"
+              maxLength={200}
               required
             />
           </div>
@@ -128,6 +131,7 @@ export function ContactForm({ children }: ContactFormProps) {
               id="message"
               name="message"
               placeholder="Tell me about your idea..."
+              maxLength={5000}
               className="min-h-[120px]"
               onKeyDown={handleKeyDown}
               required
