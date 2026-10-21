@@ -129,7 +129,7 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await getResend().emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["lesterandig17@gmail.com"],
+      to: ["testraaa0506@gmail.com"],
       replyTo: payload.senderEmail,
       subject: payload.subject,
       react: ContactEmailTemplate({
