@@ -22,10 +22,25 @@ jobs:
     env:
       # PLACEHOLDERS ONLY -- never real secrets.
       #
-      # The Resend client is constructed lazily inside the route handler, so
-      # `next build` does not need a real key. A non-empty placeholder is
-      # still provided so any accidental eager use fails loudly instead of
-      # silently. Redis is only contacted at request time.
+      # These are fake values, not credentials. A workflow file is committed
+      # to git and visible to everyone with repo access, so real keys must
+      # never live here.
+      #
+      # The build does not actually need them. `next build` evaluates route
+      # modules to collect page data, but:
+      #   - the Resend client is constructed lazily inside the request handler,
+      #     so `new Resend()` is never called at build time
+      #   - `new Redis({url, token})` only logs a warning when the values are
+      #     missing; it does not throw
+      # Verified: the build completes with no env vars and no .env at all.
+      #
+      # They are here to silence the two Upstash "property is missing"
+      # warnings in the build log and to document which env vars the app
+      # expects. Nothing in CI contacts Resend or Upstash over the network.
+      #
+      # If a future job DOES need real credentials, put them in GitHub
+      # Actions Secrets and reference them as `${{ secrets.RESEND_API_KEY }}`
+      # -- never inline them here.
       RESEND_API_KEY: re_ci_placeholder
       UPSTASH_REDIS_REST_URL: https://placeholder.upstash.io
       UPSTASH_REDIS_REST_TOKEN: ci-placeholder-token
