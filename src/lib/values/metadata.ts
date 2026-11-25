@@ -1,5 +1,5 @@
 export const metadataInfos = {
-  metaDatabase: new URL("https://randall-is-a.dev"),
+  metaDatabase: new URL("https://lstrndg.vercel.app"),
   titles: {
     defaults: {
       default: "Experience - Lester Andig",
@@ -66,7 +66,7 @@ export const metadataInfos = {
     title: "Lester Andig",
     description:
       "Portfolio of Lester Andig - Web Developer specializing in React, Next.js, and modern web technologies",
-    url: "https://randall-is-a.dev",
+    url: "https://lstrndg.vercel.app",
     siteName: "Lester Andig Portfolio",
     images: [
       {
